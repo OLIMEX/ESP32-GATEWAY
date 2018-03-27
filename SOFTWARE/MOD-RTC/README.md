@@ -12,9 +12,9 @@ MOD-RTC: https://www.olimex.com/Products/Modules/Time/MOD-RTC/open-source-hardwa
 
 Hardware setup:
 
-![Hardware setup] (https://github.com/OLIMEX/ESP32-GATEWAY/raw/master/SOFTWARE/MOD-RTC/Pic1.jpg)
+![Hardware setup](https://github.com/OLIMEX/ESP32-GATEWAY/raw/master/SOFTWARE/MOD-RTC/Pic1.jpg)
 
-![Hardware setup2] (https://github.com/OLIMEX/ESP32-GATEWAY/raw/master/SOFTWARE/MOD-RTC/Pic2.jpg)
+![Hardware setup2](https://github.com/OLIMEX/ESP32-GATEWAY/raw/master/SOFTWARE/MOD-RTC/Pic2.jpg)
 
 Stanimir Petev
 2018/03/27
