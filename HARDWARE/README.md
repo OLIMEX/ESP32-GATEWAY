@@ -5,6 +5,22 @@ Notice that we use the latest nightly KiCad builds.
 
 Hardware change log:
 
+- Hardware revision E
+
+1. R5 connected after T1's collector and value changed from NA to 1K. 
+2. Improved drill distances.
+
+- Hardware revision D
+
+Major Ethernet schematic changes, similar to ESP32-PoE:
+
+1. LAN8710's pin XTAL1 was disconnected from GPIO0 and connected to GPIO17/EMAC_CLK_OUT_180. GPIO17 is now GPIO5 is now used as Ethernet "power pin".
+2. CR1(Q50MHz/25ppm/3V/4P/5x3.2mm) and all surrounding elements were deleted.
+3. U8(NCP303LSN27T1G(SOT-23-5)) and all surrounding elements were deleted.
+4. U10(BAT54C), R44 and R5 were deleted.
+5. FET1, R5, R6, C2, T1 and L1 were added to enable Ethernet power on/off feature.
+6. GPIO5 is used for Ethernet power on/off.
+
 - Hardware revision C
 
 1. R5(1k) resistor added between OSC_EN and NRST(pin #19) of LAN8710A chip. Later, it was changed to NA!
