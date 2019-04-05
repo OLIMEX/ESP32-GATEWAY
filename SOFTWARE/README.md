@@ -1,4 +1,19 @@
-# ESP32-GATEWAY Software development
+# ESP32-GATEWAY software development
+
+This repo contains ESP-IDF examples for Olimex ESP32-GATEWAY.
+
+Since there are major hardware changes between revision C and D, there
+are two folders with examples! The clock source for the Ethernet is different!
+
+If you own newer board, revision D or newer then get the IDF exmaples from
+folder "Newest-hardware-revisions"
+
+If you have board revision B or C then get the demos from folder
+"Hardware-revisions-B-or-C"
+
+
+If you are looking for Arduino demos just install the official ESP32 json,
+our board is supported in the official branches.
 
 ## Install ESP-IDF
 To run the examples in this directory or your own you'll need to get

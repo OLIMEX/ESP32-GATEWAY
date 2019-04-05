@@ -1,0 +1,18 @@
+menu "Example Configuration"
+
+choice
+    prompt  "Select board relay to use in the example"
+
+config RELAY_1
+    bool "Relay 1"
+    help
+		Use Relay 1 to switch in the example.
+
+config RELAY_2
+    bool "Relay 2"
+    help
+		Use Relay 2 to switch in the example.
+
+endchoice
+
+endmenu
