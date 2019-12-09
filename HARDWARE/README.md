@@ -1,5 +1,5 @@
 # ESP32-GATEWAY
-ESP32 WiFi / BLE development board with Ethernet, microSD card, GPIOs made with KiCAD.
+ESP32 WIFI / BLE development board with Ethernet, micro SD card, GPIOs made with KiCAD.
 
 Notice that we use the latest nightly KiCad builds.
 
@@ -16,13 +16,21 @@ NA resistor pads (R9-R11) for backwards compatiblity.
 3. A lot of deep sleep mode improvements to lower the consumption to 100uA or less:
 
 R19 was changed from 4.99k/1%/R0603 to 220k/R0603;
+
 R20 was changed from 1.1k/1%/R0603 to 49.9k/1%/R0603;
+
 R30 was changed from 10k/0603 to 1M/R0603;
+
 LED_E1 jumper added to provide an option to disable the power LED;
+
 R24 changed from 1k/0603 to 1M/R0603;
+
 U5(CH340)'s pin 20disconnected from GND and left opened;
+
 CH340 now powered only when USB is present;
+
 R35 and R40 were changed from 220R/R0603 to 10k/R0603;
+
 D1 and D3 added, 1N5819S4/SOD123, as level shifters;
 
 4. L2 was changed from 2.2uH/1.5A/DCR<0.1R/CD32 to 2.2uH/1.5A/DCR=72mR/20%/3.00x3.00x1.50mm/CD32(NR3015T2R2M);
