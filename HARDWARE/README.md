@@ -7,7 +7,7 @@ Hardware change log:
 
 - Hardware revision F
 
- Added 3D view. Major changes to GPIO header, SD card mode, power consumption!:
+>Added 3D view. Major changes to GPIO header, SD card mode, power consumption!:
 
 1. GPIO6-11, which are used by the ESP32's internal flash, were disconnected from CON1 
 and the 6 SD card signals are now routed instead for use when SD card is not present;
