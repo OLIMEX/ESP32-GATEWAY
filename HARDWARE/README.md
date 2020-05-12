@@ -5,6 +5,11 @@ Notice that we use the latest nightly KiCad builds.
 
 Hardware change log:
 
+- Hardware revision G
+
+1. R54 removed. R24 and R16 moved further away from the button.
+2. Improved EN signal - added C5(1uF/0603) on pin #3 of ESP32. R24 now 10k.
+
 - Hardware revision F
 
 >Added 3D view. Major changes to GPIO header, SD card mode, power consumption!:
