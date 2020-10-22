@@ -23,15 +23,13 @@
 #define OLIMEX_LED_PIN      33
 #define OLIMEX_BUT_PIN      34
 
-/* You can run menuconfig to change relay */
-#define RELAY_GPIO OLIMEX_LED_PIN
 
 /**
  * @brief gpio_isr_handler  Handle button press interrupt
  */
 static void IRAM_ATTR gpio_isr_handler(void* arg)
 {
-    gpio_set_level(RELAY_GPIO, !gpio_get_level(OLIMEX_BUT_PIN));
+    gpio_set_level(OLIMEX_LED_PIN, !gpio_get_level(OLIMEX_BUT_PIN));
 }
 
 /**
@@ -41,11 +39,11 @@ void app_main()
 {
 
     /* Make pads GPIO */
-    gpio_pad_select_gpio(RELAY_GPIO);
+    gpio_pad_select_gpio(OLIMEX_LED_PIN);
     gpio_pad_select_gpio(OLIMEX_BUT_PIN);
 
     /* Set the Relay as a push/pull output */
-    gpio_set_direction(RELAY_GPIO, GPIO_MODE_OUTPUT);
+    gpio_set_direction(OLIMEX_LED_PIN, GPIO_MODE_OUTPUT);
 
     /* Set Button as input */
     gpio_set_direction(OLIMEX_BUT_PIN, GPIO_MODE_INPUT);

@@ -3,6 +3,6 @@
 # project subdirectory.
 #
 
-PROJECT_NAME := toggle_relay
+PROJECT_NAME := led_button
 
 include $(IDF_PATH)/make/project.mk
