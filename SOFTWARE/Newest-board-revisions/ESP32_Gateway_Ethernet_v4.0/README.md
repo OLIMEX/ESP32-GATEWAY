@@ -15,9 +15,15 @@ If you have a new Ethernet application to go (for example, connect to IoT cloud 
 
 ### Hardware Required
 
-To run this example, it's recommended that you have an official ESP32 Ethernet development board - [ESP32-Ethernet-Kit](https://docs.espressif.com/projects/esp-idf/en/latest/hw-reference/get-started-ethernet-kit.html). This example should also work for 3rd party ESP32 board as long as it's integrated with a supported Ethernet PHY chip. Up until now, ESP-IDF supports up to four Ethernet PHY: `LAN8720`, `IP101`, `DP83848` and `RTL8201`, additional PHY drivers should be implemented by users themselves.
+To run this example, it's recommended that you have the Olimex board ESP32-GATEWAY or one of its variants. This example should also work for 3rd party ESP32 board as long as it's integrated with a supported Ethernet PHY chip. Up until now, ESP-IDF supports up to four Ethernet PHY: LAN8720, IP101, DP83848 and RTL8201, additional PHY drivers should be implemented by users themselves.
 
-Besides that, `esp_eth` component can drive third-party Ethernet module which integrates MAC and PHY and provides common communication interface (e.g. SPI, USB, etc). This example will take the **DM9051** as an example, illustrating how to install the Ethernet driver in the same manner.
+Notice that Olimex board uses LAN8710 chip but the libraries for LAN8710 and LAN8720 are similar (the chips are very similar).
+
+Besides that, esp_eth component can drive third-party Ethernet module which integrates MAC and PHY and provides common communication interface (e.g. SPI, USB, etc).This example will take the LAN8720 library for the an example, illustrating how to install the Ethernet driver in the same manner. In this project by default this feature is disabled. If you want to enable it:
+
+idf.py menuconfig
+
+then option and navigate to "Component config -> Ethernet" and check the "Support SPI to Ethernet Module" and then in that submenu check "Use LAN8720".
 
 ### Configure the project
 
@@ -25,7 +31,7 @@ Besides that, `esp_eth` component can drive third-party Ethernet module which in
 idf.py menuconfig
 ```
 
-See common configurations for Ethernet examples from [upper level](../../SOFTWARE/README.md#run-examples).
+See common configurations for Ethernet examples from [upper level](../SOFTWARE/README.md#run-examples).
 
 ### Build, Flash, and Run
 
