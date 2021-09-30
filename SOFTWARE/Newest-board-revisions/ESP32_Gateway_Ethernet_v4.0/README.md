@@ -19,17 +19,13 @@ To run this example, it's recommended that you have an official ESP32 Ethernet d
 
 Besides that, `esp_eth` component can drive third-party Ethernet module which integrates MAC and PHY and provides common communication interface (e.g. SPI, USB, etc). This example will take the **DM9051** as an example, illustrating how to install the Ethernet driver in the same manner.
 
-#### Pin Assignment
-
-See common pin assignments for Ethernet examples from [upper level](../README.md#common-pin-assignments).
-
 ### Configure the project
 
 ```
 idf.py menuconfig
 ```
 
-See common configurations for Ethernet examples from [upper level](../README.md#common-configurations).
+See common configurations for Ethernet examples from [upper level](../../SOFTWARE/README.md#run-examples).
 
 ### Build, Flash, and Run
 
@@ -64,6 +60,4 @@ Now you can ping your ESP32 in the terminal by entering `ping 192.168.2.151` (it
 
 ## Troubleshooting
 
-See common troubleshooting for Ethernet examples from [upper level](../README.md#common-troubleshooting).
-
-(For any technical queries, please open an [issue](https://github.com/espressif/esp-idf/issues) on GitHub. We will get back to you as soon as possible.)
+For any technical queries, please open an [issue](https://github.com/OLIMEX/ESP32-GATEWAY/issues) on GitHub. We will get back to you as soon as possible.
