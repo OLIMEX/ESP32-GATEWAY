@@ -33,7 +33,7 @@ then option and navigate to "Component config -> Ethernet" and check the "Suppor
 idf.py menuconfig
 ```
 
-See common configurations for Ethernet examples from [upper level](../../SOFTWARE/README.md#run-examples).
+See common configurations for Ethernet examples from [upper level](../../README.md#run-examples).
 
 ### Build, Flash, and Run
 
