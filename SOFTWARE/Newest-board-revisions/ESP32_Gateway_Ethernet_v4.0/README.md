@@ -21,7 +21,9 @@ Notice that Olimex board uses LAN8710 chip but the libraries for LAN8710 and LAN
 
 Besides that, esp_eth component can drive third-party Ethernet module which integrates MAC and PHY and provides common communication interface (e.g. SPI, USB, etc).This example will take the LAN8720 library for the an example, illustrating how to install the Ethernet driver in the same manner. In this project by default this feature is disabled. If you want to enable it:
 
+```
 idf.py menuconfig
+```
 
 then option and navigate to "Component config -> Ethernet" and check the "Support SPI to Ethernet Module" and then in that submenu check "Use LAN8720".
 
@@ -31,7 +33,7 @@ then option and navigate to "Component config -> Ethernet" and check the "Suppor
 idf.py menuconfig
 ```
 
-See common configurations for Ethernet examples from [upper level](../SOFTWARE/README.md#run-examples).
+See common configurations for Ethernet examples from [upper level](../../SOFTWARE/README.md#run-examples).
 
 ### Build, Flash, and Run
 
