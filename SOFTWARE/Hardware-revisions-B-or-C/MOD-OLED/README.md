@@ -14,7 +14,7 @@ The hardware setup looks like this:
 
 ![Hardware setup](https://github.com/OLIMEX/ESP32-GATEWAY/raw/master/SOFTWARE/MOD-OLED/pic1.jpg)
 
-![Hardware setup2](https://github.com/OLIMEX/ESP32-GATEWAY/raw/master/SOFTWARE/MOD-OLED/pic2.jpg)
+![Hardware setup2](https://github.com/OLIMEX/ESP32-GATEWAY/raw/master/SOFTWARE/Hardware-revisions-B-or-C/MOD-OLED/pic2.jpg)
 
 Stanimir Petev
 2018/03/27
