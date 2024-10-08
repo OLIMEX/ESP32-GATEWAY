@@ -5,14 +5,38 @@ Notice that we use the latest nightly KiCad builds.
 
 Hardware change log:
 
+- Hardware revision I
+
+1. To reduce noise getting picked by Ethernet clock, disconnected GPIO17 from the CON1 header. Added 
+jumper pads GPIO17_E1 (open by default) if somebody wants to lead it to the header...
+
+---
+
+- Hardawre revision H
+
+1. Added diode D5 on esp_en;
+3. Added TVS1 on PHY;
+4. Opravi se value na NA(HN1x20);
+5. T1 now LMUN2211LT1G;
+6. USB connector changed to type C (more popular nowadays);
+7. Added r12 and c6;
+8. Added CE sign;
+9. R28,R31,R32,R33 lowered to 0402 size;
+10. DCDC - SY8089 changed to TPS62A02ADRLR. C3 now NA. L2 changed to 1.0uH/2.5A/CD32;
+11. Updated the CH340X module to the latest one. 
+
+---
+
 - Hardware revision G
 
 1. R54 removed. R24 and R16 moved further away from the button.
 2. Improved EN signal - added C5(1uF/0603) on pin #3 of ESP32. R24 now 10k.
 
+---
+
 - Hardware revision F
 
->Added 3D view. Major changes to GPIO header, SD card mode, power consumption!:
+- Added 3D view. Major changes to GPIO header, SD card mode, power consumption!:
 
 1. GPIO6-11, which are used by the ESP32's internal flash, were disconnected from CON1 
 and the 6 SD card signals are now routed instead for use when SD card is not present;
@@ -20,27 +44,29 @@ and the 6 SD card signals are now routed instead for use when SD card is not pre
 NA resistor pads (R9-R11) for backwards compatiblity.
 3. A lot of deep sleep mode improvements to lower the consumption to 100uA or less:
 
->R19 was changed from 4.99k/1%/R0603 to 220k/R0603;
+- R19 was changed from 4.99k/1%/R0603 to 220k/R0603;
 
->R20 was changed from 1.1k/1%/R0603 to 49.9k/1%/R0603;
+- R20 was changed from 1.1k/1%/R0603 to 49.9k/1%/R0603;
 
->R30 was changed from 10k/0603 to 1M/R0603;
+- R30 was changed from 10k/0603 to 1M/R0603;
 
->LED_E1 jumper added to provide an option to disable the power LED;
+- LED_E1 jumper added to provide an option to disable the power LED;
 
->R24 changed from 1k/0603 to 1M/R0603;
+- R24 changed from 1k/0603 to 1M/R0603;
 
->U5(CH340)'s pin 20disconnected from GND and left opened;
+- U5(CH340)'s pin 20disconnected from GND and left opened;
 
->CH340 now powered only when USB is present;
+- CH340 now powered only when USB is present;
 
->R35 and R40 were changed from 220R/R0603 to 10k/R0603;
+- R35 and R40 were changed from 220R/R0603 to 10k/R0603;
 
->D1 and D3 added, 1N5819S4/SOD123, as level shifters;
+- D1 and D3 added, 1N5819S4/SOD123, as level shifters;
 
 4. L2 was changed from 2.2uH/1.5A/DCR<0.1R/CD32 to 2.2uH/1.5A/DCR=72mR/20%/3.00x3.00x1.50mm/CD32(NR3015T2R2M);
 5. U3's value was changed from ESP-WROOM-32 to ESP32-WROOM-32D-4MB;
 6. U9(BAT54C(SOT23-3)) was renamed to D4;
+
+---
 
 - Hardware revision E1
 
