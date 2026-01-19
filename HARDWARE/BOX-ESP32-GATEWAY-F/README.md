@@ -1,0 +1,1 @@
+Box can be purchased from here: https://www.olimex.com/Products/IoT/ESP32/BOX-ESP32-GATEWAY-F/
